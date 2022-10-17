@@ -1,3 +1,3 @@
 <!-- #on start up what commands need to run -->
 <!-- green unicorn pure pytohn http server run server by concurently running python application it create multiple instances -->
-web: gunicorn app:app
+web: gunicorn app.wsgi
