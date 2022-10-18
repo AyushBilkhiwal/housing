@@ -8,7 +8,7 @@ from sklearn.preprocessing import StandardScaler
 app = Flask(__name__)
 regmodel=pickle.load(open('regmodel.pkl','rb'))
 scalar=pickle.load(open('scaling.pkl','rb'))
-@app.route("/")
+@app.route("/",methods=['GET'])
 def home():
     return render_template('home.html')
     # return "<p>Hello, World!</p>"
